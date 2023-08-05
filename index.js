@@ -41,7 +41,7 @@ app.use(session({
 
 app.get('/', (req, res) => {
   res.send(`
-    <div style="display: flex; align-items: center; justify-content: center;">
+    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
       <h1 style="font-size: 2rem; font-weight: bold; margin-bottom: 2rem;">
         Hello World!
       </h1>
