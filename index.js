@@ -40,7 +40,14 @@ app.use(session({
 }))
 
 app.get('/', (req, res) => {
-  res.send(`<a href='/connect'>Connect to Xero</a>`)
+  res.send(`
+    <div style="display: flex; align-items: center; justify-content: center;">
+      <h1 style="font-size: 2rem; font-weight: bold; margin-bottom: 2rem;">
+        Hello World!
+      </h1>
+      <a href='/connect'>Connect to Xero</a>
+    </div>
+  `)
 })
 
 app.get('/connect', async (req, res) => {
